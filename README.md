@@ -1,30 +1,25 @@
 # Puerto Rico Election Shapefile
-This shapefile was obtained from the Maine Geolibrary website and processed by students working with MGGG during and after the 2020 Geodata Bootcamp. This effort was led by Jorge Lopez-Nava and Katie Knox and included Nathaniel Cox, Angus Lam, Jennifer Paige, Nathan Pitock, Powell Sheagren, and Victoria Song. Some additional processing was done by MGGG staff.
+This shapefile was obtained from the [Comisión Estatal de Elecciones](https://ww2.ceepur.org/Home/Estadisticas), the State Election Commission website. It was processed by students working with MGGG during and after the 2020 Geodata Bootcamp. This effort was included Kat Henneberger, Benjamin Carman, Antonio Onwu, Claudia Aranda, Jorge Lopez-Nava, and Quinn Molloy. Some additional processing was done by MGGG staff.
 
 ## Sources
-The Maine precinct shapefile was obtained from the [Maine Geolibrary](https://www.maine.gov/geolib/catalog.html), a GIS service of the State of Maine. Election data come from the [Maine Bureau of Corporations, Elections, & Commissions](https://www.maine.gov/sos/cec/elec/results/index.html). 2010 Decennial Census demographic data were downloaded from the [Census API](https://api.census.gov/data/2010/dec/sf1). The 2010 census block shapefile for Maine was downloaded from the US Census Bureau’s [TIGER/Line Shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html).
+The Puerto Rico precinct shapefile and election results were obtained from the [Comisión Estatal de Elecciones](https://ww2.ceepur.org/Home/Estadisticas), the State Election Commission website. 2010 Decennial Census demographic data were downloaded from the [Census API](https://api.census.gov/data/2010/dec/sf1). The 2010 census block shapefile for Puerto Rico was downloaded from the US Census Bureau’s [TIGER/Line Shapefiles](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html).
 
 
 ## Processing
-Some very limited merging of precincts in the tabular election data and precinct shapefile were necessary to join election results to precinct boundaries. Demographic data were aggregated from the block level using MGGG’s proration software. Congressional and state legislative district IDs were also assigned to precincts using this package.
-
+Precincts were built from digitizing PDF maps. Demographic data were aggregated from the block level using MGGG’s proration software. Congressional and state legislative district IDs were also assigned to precincts using this package.
 
 ## Metadata
-* `STATE`: State
+* `State`: State
 * `STATEFP`: State FIPS code
-* `COUNTY`: County name
-* `COUNTYFP`: County FIPS code
+* `Municipio`: Municipality (county-level jurisdiction) name
+* `MUNIFP`: Municipality FIPS code
 * `Precinct`: Precinct name
 * `CODE`: Precinct code
-*	`PRES16D`: Number of votes for 2016 Democratic presidential candidate, without absentee votes
-*	`PRES16R`: Number of votes for 2016 Republican presidential candidate, without absentee votes
-*	`USH16D`: Number of votes for 2016 Democratic US House candidate, without absentee votes
-*	`USH16R`: Number of votes for 2016 Republican US House candidate, without absentee votes
 * `GOV16PPD`: Number of votes for 2016 Partido Nuevo Progresista (New Progressive Party) gubernatorial candidate
 * `GOV16PNP`: Number of votes for 2016 Partido Popular Democrático (Popular Democratic Party) gubernatorial candidate
 * `GOV16I`: Number of votes for 2016 independent gubernatorial candidates
-* `RC16PPD`: Number of votes for 2016 Partido Popular Democrático (Popular Democratic Party)
-* `RC16PNP`: Number of votes for 2016 Partido Nuevo Progresista (New Progressive Party)  candidate
+* `RC16PPD`: Number of votes for 2016 Partido Popular Democrático (Popular Democratic Party) resident commissioner candidate
+* `RC16PNP`: Number of votes for 2016 Partido Nuevo Progresista (New Progressive Party) resident commissioner candidate
 * `MAY16PPD`: Number of votes for 2016 Partido Popular Democrático (Popular Democratic Party) mayoral candidate
 * `MAY16PNP`: Number of votes for 2016 Partido Nuevo Progresista (New Progressive Party) mayoral candidate
 * `TOTPOP`: Total population from 2010 Decennial Census
@@ -52,13 +47,12 @@ Some very limited merging of precincts in the tabular election data and precinct
 * `NHPIVAP`: Native Hawaiian and Pacific Islander, non-hispanic, voting age population from 2010 Decennial Census
 * `OTHERVAP`: Other race, non-hispanic, voting age population from 2010 Decennial Census
 * `2MOREVAP`: Two or more races, non-hispanic, voting age population from 2010 Decennial Census
-* `CD`: Congressional district
 * `HDIST`: State House district number
 * `SEND`: State Senate district number
-* `SENDNAME`: State Senate district name
+* `SEND-name`: State Senate district name
 
 ## Projection
-This shapefile uses a UTM Zone 19 projection (ESPG:6348).
+This shapefile uses a UTM Zone 20N projection (ESPG:3920).
 
 ## Rating
-We give this shapefile an A rating. All data were obtained from the state government and processing was conducted by a group trained by and working closely with MGGG.
+We give this shapefile an A rating. All data were obtained from the Puerto Rican government and processing was conducted by a group trained by and working closely with MGGG.

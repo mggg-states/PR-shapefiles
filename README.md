@@ -14,7 +14,7 @@ Precincts were built from digitizing PDF maps. Demographic data were aggregated 
 * `Municipio`: Municipality (county-level jurisdiction) name
 * `MUNIFP`: Municipality FIPS code
 * `Precinct`: Precinct name
-* `CODE`: Precinct code
+* `Code`: Precinct code
 * `GOV16PPD`: Number of votes for 2016 Partido Nuevo Progresista (New Progressive Party) gubernatorial candidate
 * `GOV16PNP`: Number of votes for 2016 Partido Popular Democrático (Popular Democratic Party) gubernatorial candidate
 * `GOV16I`: Number of votes for 2016 independent gubernatorial candidates
